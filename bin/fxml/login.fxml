@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="870.0" stylesheets="@../../src/application/application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginController">
+   <children>
+      <HBox prefHeight="482.0" prefWidth="442.0">
+         <children>
+            <Pane fx:id="menu" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="876.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER" layoutX="574.0" layoutY="73.0" text="WELCOME" textAlignment="CENTER" textFill="#009ee2">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="mail" layoutX="640.0" layoutY="166.0" />
+                  <Button fx:id="loginButton" layoutX="564.0" layoutY="278.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="226.0" style="-fx-background-color: #009EE2; -fx-border-color: #626262; -fx-background-radius: 10; -fx-border-radius: 5;" text="Đăng nhập" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Label layoutX="564.0" layoutY="169.0" prefHeight="0.0" prefWidth="39.0" text="Email" textFill="#009ee2">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="584.0" layoutY="331.0" text="Bạn chưa có tài khoản?" textFill="#626262" />
+                  <Label layoutX="563.0" layoutY="226.0" text="Mật khẩu" textFill="#009ee2">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <PasswordField fx:id="password" layoutX="640.0" layoutY="223.0" />
+                  <ImageView fitHeight="548.0" fitWidth="432.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+						<Image url="@../img/bg4.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="126.0" layoutY="14.0" prefHeight="76.0" prefWidth="274.0" styleClass="title-label" text="Travelista Tours" textFill="#fcfffd">
+                     <font>
+                        <Font name="Great Vibes Regular" size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="594.0" layoutY="115.0" text="Đăng nhập bằng tài khoản" textFill="#00000097" />
+                  <Hyperlink fx:id="goToRegister" layoutX="708.0" layoutY="328.0" onAction="#goToRegister" text="Đăng ký" textFill="#000000ef">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <HBox layoutX="422.0" layoutY="447.0" prefHeight="60.0" prefWidth="103.0" />
+                  <ImageView fitHeight="89.0" fitWidth="125.0" layoutX="438.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/laudai.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="668.0" layoutY="14.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/mb.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label layoutX="623.0" layoutY="447.0" prefHeight="17.0" prefWidth="171.0" text="Thiết kế bởi Ngọc Lan" textFill="#009ee2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
